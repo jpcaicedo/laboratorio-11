@@ -1,0 +1,21 @@
+function renderAgents(agents) {
+    const container = document.getElementById('agents-container');
+    container.innerHTML = '';
+
+    agents.forEach(agent => {
+        const agentDiv = document.createElement('div');
+        agentDiv.classList.add('agent');
+
+        agentDiv.innerHTML = `
+            <img src="${agent.imagen}" alt="${agent.nombre}">
+            <h2>${agent.nombre}</h2>
+            <p>Rol: ${agent.rol}</p>
+            <h3>Habilidades:</h3>
+            <ul>
+                ${agent.habilidades.map(habilidad => `<li>${habilidad}</li>`).join('')}
+            </ul>
+        `;
+
+        container.appendChild(agentDiv);
+    });
+}

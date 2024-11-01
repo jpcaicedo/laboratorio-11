@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#search {
+    padding: 0.5rem;
+    width: 300px;
+}
+
+#agents-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.agent {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.agent img {
+    width: 100%;
+    height: auto;
+}
+
+.agent h2 {
+    font-size: 1.2rem;
+}
+
+.agent ul {
+    list-style: none;
+    padding: 0;
+}
